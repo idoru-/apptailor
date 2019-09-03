@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Box, Heading, Table, TableBody, TableCell, TableHeader, TableRow } from 'grommet'
+import { Box, Button, Heading, Table, TableBody, TableCell, TableHeader, TableRow } from 'grommet'
 
 export const PurchaseSummary = () => (
   <Box fill align='center' justify='start' background='brand'>

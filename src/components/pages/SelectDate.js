@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Box, Button, Calendar, Heading, Table, TableBody, TableCell, TableHeader, TableRow } from 'grommet'
+import { Box, Button, Calendar, Heading, Table, TableBody, TableCell, TableRow } from 'grommet'
 
 export const SelectDate = () => (
   <Box fill align='center' justify='start' background='brand'>
