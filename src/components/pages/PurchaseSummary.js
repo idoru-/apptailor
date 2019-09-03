@@ -3,7 +3,7 @@ import React from 'react'
 import { Box, Heading, Table, TableBody, TableCell, TableHeader, TableRow } from 'grommet'
 
 export const PurchaseSummary = () => (
-  <Box fill align='center' justify='start'>
+  <Box fill align='center' justify='start' background='brand'>
     <Heading>PurchaseSummary</Heading>
     <Box pad='small'>
       <Table>

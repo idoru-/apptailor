@@ -3,7 +3,7 @@ import React from 'react'
 import { Box, Button, Calendar, Heading, Table, TableBody, TableCell, TableHeader, TableRow } from 'grommet'
 
 export const SelectDate = () => (
-  <Box fill align='center' justify='start'>
+  <Box fill align='center' justify='start' background='brand'>
     <Heading>Select Date</Heading>
     <Calendar size='small' date={new Date().toISOString()} onSelect={date => {}} />
     <Heading>Select Timespot</Heading>
