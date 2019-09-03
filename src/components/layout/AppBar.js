@@ -24,6 +24,6 @@ export const AppBar = ({ appName }) => (
       }
     />
 
-    <Anchor href='/' icon={<PoinsIcon color='brand' size='medium' />} label='Reward: 2560 points' />
+    <Anchor href='/reward' icon={<PoinsIcon color='brand' size='medium' />} label='Reward: 2560 points' />
   </Box>
 )

@@ -11,6 +11,8 @@ import {
   SelectPro,
   SelectProduct,
   SelectDate,
+  OrderSubmitted,
+  Reward,
   MyPurchases,
   Settings,
   Support,
@@ -32,8 +34,10 @@ function App() {
               <Route path='/summary' component={PurchaseSummary} />
               <Route path='/date' component={SelectDate} />
               <Route path='/purchases' component={MyPurchases} />
+              <Route path='/reward' component={Reward} />
               <Route path='/support' component={Support} />
               <Route path='/settings' component={Settings} />
+              <Route path='/submitted' component={OrderSubmitted} />
             </Switch>
           </Box>
           <Footer appName='My App' />

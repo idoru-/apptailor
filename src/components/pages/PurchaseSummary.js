@@ -49,5 +49,6 @@ export const PurchaseSummary = () => (
         </TableBody>
       </Table>
     </Box>
+    <Button label='Place Order' href='/submitted' />
   </Box>
 )
