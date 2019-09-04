@@ -12,9 +12,12 @@ import {
   SelectProduct,
   SelectDate,
   OrderSubmitted,
+  SignIn,
+  SignUp,
   Reward,
   MyPurchases,
   Settings,
+  Success,
   Support,
 } from './components/pages'
 import { AppBar, Footer } from './components/layout'
@@ -35,6 +38,9 @@ function App() {
               <Route path='/date' component={SelectDate} />
               <Route path='/purchases' component={MyPurchases} />
               <Route path='/reward' component={Reward} />
+              <Route path='/signin' component={SignIn} />
+              <Route path='/signup' component={SignUp} />
+              <Route path='/success' component={Success} />
               <Route path='/support' component={Support} />
               <Route path='/settings' component={Settings} />
               <Route path='/submitted' component={OrderSubmitted} />
