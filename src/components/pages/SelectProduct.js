@@ -5,8 +5,17 @@ import { Basket as BasketIcon } from 'grommet-icons'
 
 export const SelectProduct = () => (
   <Box fill align='center' justify='start' background='brand'>
-    <Heading>Purchase</Heading>
-    <Anchor icon={<BasketIcon color='brand' size='medium' />} label={<Heading level='4'>My Cart (0)</Heading>} />
+    <Box direction='row'>
+      <Heading>Products and Services</Heading>
+      <Anchor
+        icon={<BasketIcon size='medium' />}
+        label={
+          <Heading level='4' href='#'>
+            My Cart (0)
+          </Heading>
+        }
+      />
+    </Box>
     <Tabs>
       <Tab title='Services'>
         <Box pad='medium'>Some Services</Box>
