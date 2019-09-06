@@ -2,6 +2,7 @@ import React from 'react'
 
 import { Box, Button, Heading, Tab, Tabs, Anchor } from 'grommet'
 import { Basket as BasketIcon } from 'grommet-icons'
+import ServicesList from '../layout/ServicesList'
 
 export const SelectProduct = () => (
   <Box fill align='center' justify='start' background='brand'>
@@ -18,7 +19,9 @@ export const SelectProduct = () => (
     </Box>
     <Tabs>
       <Tab title='Services'>
-        <Box pad='medium'>Some Services</Box>
+        <Box pad='medium'>
+          <ServicesList />
+        </Box>
       </Tab>
       <Tab title='Products'>
         <Box pad='medium'>Some Products</Box>
