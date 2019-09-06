@@ -27,6 +27,6 @@ export const SelectProduct = () => (
         <Box pad='medium'>Some Combos</Box>
       </Tab>
     </Tabs>
-    <Button label='Next' href='/professional' />
+    <Button label='Purchase' href='/professional' />
   </Box>
 )
