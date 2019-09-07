@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Box, Button, Grid, Heading } from 'grommet'
+import { Box, Button, Grid, InfiniteScroll, Heading } from 'grommet'
 import ProCard from '../layout/ProCard'
 
 const pros = [
@@ -34,12 +34,13 @@ export const SelectPro = () => (
   <Box fill align='center' justify='start' background='brand'>
     <Heading>SelectPro</Heading>
     <Heading level='3'>Our Professionals</Heading>
-    <Grid align='start' columns={{ count: 'fill', size: 'full' }} gap='medium'>
-      {pros.map(pro => (
-        <ProCard {...pro} key={pro.id} onClickFavorite={() => this.updateFavorite(pro.id)} />
-      ))}
-    </Grid>
-    <Box></Box>
+    <Box height='large' overflow='auto' margin={{ bottom: 'small' }}>
+      <Grid align='start' columns={{ count: 'fill', size: 'full' }} gap='medium'>
+        <InfiniteScroll items={pros}>
+          {pro => <ProCard {...pro} key={pro.id} onClickFavorite={() => this.updateFavorite(pro.id)} />}
+        </InfiniteScroll>
+      </Grid>
+    </Box>
     <Button label='Next' href='/date' />
   </Box>
 )
