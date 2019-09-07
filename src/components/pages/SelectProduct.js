@@ -17,7 +17,7 @@ export const SelectProduct = () => (
         }
       />
     </Box>
-    <Tabs>
+    <Tabs margin={{ bottom: 'small' }}>
       <Tab title='Services'>
         <Box pad='medium'>
           <ServicesList />
