@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import { Box, Button, Grid, InfiniteScroll, Image, Paragraph, Heading } from 'grommet'
+import { Box, Button, Carousel, Grid, InfiniteScroll, Image, Paragraph, Heading } from 'grommet'
 
 const services = [
   {
@@ -175,17 +175,21 @@ const services = [
 export default class ServicesList extends Component {
   render() {
     return (
-      <Box height='medium' width='large' overflow='auto'>
+      <Box height='large' width='large' overflow='auto'>
         <Grid columns='small' rows='medium' pad='xsmall' gap='small'>
           <InfiniteScroll items={services}>
             {item => (
-              <Box flex={false} background='dark-1' key={item.id}>
-                <Image src={item.image} fit='cover' />
+              <Box flex='grow' background='dark-1' key={item.id}>
+                <Carousel fill>
+                  {(item.images || []).map((img, index) => (
+                    <Image width='small' fit='cover' key={index + ':' + item.id} src={img} />
+                  ))}
+                </Carousel>
                 <Box pad='small'>
                   <Heading level='5' margin='none'>
                     {item.name}
                   </Heading>
-                  <Paragraph size='small'>{item.discription}</Paragraph>
+                  <Paragraph>{item.discription}</Paragraph>
                   <Button color='accent-2' margin={{ horizontal: 'auto' }}>
                     <Heading level='3' margin={{ vertical: 'none' }}>
                       <strong>SELECT</strong>
