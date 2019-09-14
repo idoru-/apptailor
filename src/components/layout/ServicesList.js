@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
+import ProductCard from '../layout/ProductCard'
 
-import { Box, Button, Carousel, Grid, InfiniteScroll, Image, Paragraph, Heading } from 'grommet'
+import { Box, Grid, InfiniteScroll } from 'grommet'
 
 const services = [
   {
@@ -177,28 +178,7 @@ export default class ServicesList extends Component {
     return (
       <Box height='large' width='large' overflow='auto'>
         <Grid columns='small' rows='medium' pad='xsmall' gap='small'>
-          <InfiniteScroll items={services}>
-            {item => (
-              <Box flex='grow' background='dark-1' key={item.id}>
-                <Carousel fill>
-                  {(item.images || []).map((img, index) => (
-                    <Image width='small' fit='cover' key={index + ':' + item.id} src={img} />
-                  ))}
-                </Carousel>
-                <Box pad='small'>
-                  <Heading level='5' margin='none'>
-                    {item.name}
-                  </Heading>
-                  <Paragraph>{item.discription}</Paragraph>
-                  <Button color='accent-2' margin={{ horizontal: 'auto' }}>
-                    <Heading level='3' margin={{ vertical: 'none' }}>
-                      <strong>SELECT</strong>
-                    </Heading>
-                  </Button>
-                </Box>
-              </Box>
-            )}
-          </InfiniteScroll>
+          <InfiniteScroll items={services}>{service => <ProductCard {...service} key={service.id} />}</InfiniteScroll>
         </Grid>
       </Box>
     )
