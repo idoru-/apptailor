@@ -13,7 +13,7 @@ const services = [
       '/img/luigi-pozzoli-hzquWrcAwQ4-unsplash.jpg',
     ],
     id: '1',
-    discription:
+    description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti alias nostrum itaque voluptates veritatis quibusdam officiis dignissimos iusto accusamus possimus.',
   },
   {
@@ -26,7 +26,7 @@ const services = [
       '/img/luigi-pozzoli-hzquWrcAwQ4-unsplash.jpg',
     ],
     id: '2',
-    discription: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, odio.',
+    description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, odio.',
   },
   {
     name: 'Service Name Number III',
@@ -38,7 +38,7 @@ const services = [
       '/img/luigi-pozzoli-hzquWrcAwQ4-unsplash.jpg',
     ],
     id: '3',
-    discription:
+    description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptate maxime nulla reiciendis tenetur. Recusandae.',
   },
   {
@@ -51,7 +51,7 @@ const services = [
       '/img/luigi-pozzoli-hzquWrcAwQ4-unsplash.jpg',
     ],
     id: '4',
-    discription:
+    description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptate maxime nulla reiciendis tenetur. Recusandae.',
   },
   {
@@ -64,7 +64,7 @@ const services = [
       '/img/luigi-pozzoli-hzquWrcAwQ4-unsplash.jpg',
     ],
     id: '5',
-    discription: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
   },
   {
     name: 'Service Name Number VI',
@@ -76,7 +76,7 @@ const services = [
       '/img/luigi-pozzoli-hzquWrcAwQ4-unsplash.jpg',
     ],
     id: '6',
-    discription:
+    description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptate maxime nulla reiciendis tenetur. Recusandae.',
   },
   {
@@ -89,7 +89,7 @@ const services = [
       '/img/luigi-pozzoli-hzquWrcAwQ4-unsplash.jpg',
     ],
     id: '7',
-    discription:
+    description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptate maxime nulla reiciendis tenetur. Recusandae.',
   },
   {
@@ -102,7 +102,7 @@ const services = [
       '/img/luigi-pozzoli-hzquWrcAwQ4-unsplash.jpg',
     ],
     id: '8',
-    discription:
+    description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptate maxime nulla reiciendis tenetur. Recusandae.',
   },
   {
@@ -115,7 +115,7 @@ const services = [
       '/img/luigi-pozzoli-hzquWrcAwQ4-unsplash.jpg',
     ],
     id: '9',
-    discription:
+    description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptate maxime nulla reiciendis tenetur. Recusandae.',
   },
   {
@@ -128,7 +128,7 @@ const services = [
       '/img/luigi-pozzoli-hzquWrcAwQ4-unsplash.jpg',
     ],
     id: '10',
-    discription:
+    description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptate maxime nulla reiciendis tenetur. Recusandae.',
   },
   {
@@ -141,7 +141,7 @@ const services = [
       '/img/luigi-pozzoli-hzquWrcAwQ4-unsplash.jpg',
     ],
     id: '11',
-    discription:
+    description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptate maxime nulla reiciendis tenetur. Recusandae.',
   },
   {
@@ -154,7 +154,7 @@ const services = [
       '/img/luigi-pozzoli-hzquWrcAwQ4-unsplash.jpg',
     ],
     id: '12',
-    discription:
+    description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptate maxime nulla reiciendis tenetur. Recusandae.',
   },
   {
@@ -167,7 +167,7 @@ const services = [
       '/img/luigi-pozzoli-hzquWrcAwQ4-unsplash.jpg',
     ],
     id: '13',
-    discription:
+    description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptate maxime nulla reiciendis tenetur. Recusandae.',
   },
 ]
