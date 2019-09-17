@@ -176,10 +176,8 @@ const services = [
 export default class ServicesList extends Component {
   render() {
     return (
-      <Box height='large' width='large' overflow='auto'>
-        <Grid columns='small' rows='medium' pad='xsmall' gap='small'>
-          <InfiniteScroll items={services}>{service => <ProductCard {...service} key={service.id} />}</InfiniteScroll>
-        </Grid>
+      <Box height='medium' overflow='auto'>
+        <InfiniteScroll items={services}>{service => <ProductCard {...service} key={service.id} />}</InfiniteScroll>
       </Box>
     )
   }

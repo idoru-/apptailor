@@ -7,12 +7,14 @@ export default class ProductCard extends Component {
     const { name, price, duration, images, description, id } = this.props
 
     return (
-      <Box flex='grow' background='dark-1' key={id}>
-        <Carousel fill>
-          {(images || []).map((img, index) => (
-            <Image width='small' fit='cover' key={index + ':' + id} src={img} />
-          ))}
-        </Carousel>
+      <Box width='medium' flex='grow' background='dark-1' key={id}>
+        <Box height='small' overflow='hidden'>
+          <Carousel fill>
+            {(images || []).map((img, index) => (
+              <Image fit='cover' key={index + ':' + id} src={img} />
+            ))}
+          </Carousel>
+        </Box>
         <Box pad='small'>
           <Heading level='5' margin='none'>
             {name}
