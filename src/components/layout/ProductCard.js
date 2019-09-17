@@ -17,10 +17,10 @@ export default class ProductCard extends Component {
           <Heading level='5' margin='none'>
             {name}
           </Heading>
+          <Paragraph>{description}</Paragraph>
+          <Paragraph>Duration: {duration}</Paragraph>
+          <Paragraph>{price}</Paragraph>
           <Button color='accent-2' margin={{ horizontal: 'auto' }}>
-            <Paragraph>{description}</Paragraph>
-            <Paragraph>Duration: {duration}</Paragraph>
-            <Paragraph>{price}</Paragraph>
             <Heading level='3' margin={{ vertical: 'none' }}>
               <strong>SELECT</strong>
             </Heading>
