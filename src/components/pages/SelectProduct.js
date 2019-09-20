@@ -6,16 +6,20 @@ import ServicesList from '../layout/ServicesList'
 
 export const SelectProduct = () => (
   <Box fill align='center' justify='start' background='brand'>
-    <Box direction='row'>
-      <Heading>Products and Services</Heading>
-      <Anchor
-        icon={<BasketIcon size='medium' />}
-        label={
-          <Heading level='4' href='#'>
-            My Cart (0)
-          </Heading>
-        }
-      />
+    <Box direction='row' pad={{ horizontal: 'medium' }}>
+      <Box basis='2/3'>
+        <Heading>Products and Services</Heading>
+      </Box>
+      <Box margin={{ vertical: 'small' }}>
+        <Anchor
+          icon={<BasketIcon size='medium' />}
+          label={
+            <Heading level='4' href='#' textAlign='end'>
+              My&nbsp;Cart&nbsp;(0)
+            </Heading>
+          }
+        />
+      </Box>
     </Box>
     <Tabs margin={{ bottom: 'small' }}>
       <Tab title='Services'>
