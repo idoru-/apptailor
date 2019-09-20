@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 
-import { Box, Button, Carousel, Image, Paragraph, Heading } from 'grommet'
+import { Box, Button, Carousel, Image, Paragraph, Text, Heading } from 'grommet'
 
 export default class ProductCard extends Component {
   render() {
     const { name, price, duration, images, description, id } = this.props
 
     return (
-      <Box width='medium' flex='grow' background='dark-1' key={id}>
+      <Box width='medium' margin={{ bottom: 'medium' }} flex='grow' background='dark-1' key={id}>
         <Box height='small' overflow='hidden'>
           <Carousel fill>
             {(images || []).map((img, index) => (
@@ -16,12 +16,16 @@ export default class ProductCard extends Component {
           </Carousel>
         </Box>
         <Box pad='small'>
-          <Heading level='5' margin='none'>
+          <Heading level='3' margin='none'>
             {name}
           </Heading>
           <Paragraph>{description}</Paragraph>
-          <Paragraph>Duration: {duration}</Paragraph>
-          <Paragraph>{price}</Paragraph>
+          <Paragraph>
+            <Text size='small'>Duration:</Text> {duration}
+          </Paragraph>
+          <Paragraph>
+            <Text size='small'>Price:</Text> {price}
+          </Paragraph>
           <Button color='accent-2' margin={{ horizontal: 'auto' }}>
             <Heading level='3' margin={{ vertical: 'none' }}>
               <strong>SELECT</strong>

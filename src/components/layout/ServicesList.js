@@ -6,7 +6,7 @@ import { Box, Grid, InfiniteScroll } from 'grommet'
 const services = [
   {
     name: 'Service Name Number I',
-    price: '$ 200',
+    price: '$200.00',
     duration: '50 min',
     images: [
       '/img/louis-hansel-e96ST3p7tn4-unsplash.jpg',
@@ -19,7 +19,7 @@ const services = [
   },
   {
     name: 'Service Name Number II',
-    price: '$ 200',
+    price: '$200.00',
     duration: '50 min',
     images: [
       '/img/joanne-caselyn-suarez-kCGhXLU32Bg-unsplash.jpg',
@@ -31,7 +31,7 @@ const services = [
   },
   {
     name: 'Service Name Number III',
-    price: '$ 200',
+    price: '$200.00',
     duration: '50 min',
     images: [
       '/img/james-fitzgerald-h2Sp-CFF9Jc-unsplash.jpg',
@@ -44,7 +44,7 @@ const services = [
   },
   {
     name: 'Service Name Number IV',
-    price: '$ 200',
+    price: '$200.00',
     duration: '50 min',
     images: [
       '/img/henk-van-der-steege-sJvE2oIWicA-unsplash.jpg',
@@ -57,7 +57,7 @@ const services = [
   },
   {
     name: 'Service Name Number V',
-    price: '$ 200',
+    price: '$200.00',
     duration: '50 min',
     images: [
       '/img/mungyu-kim-Ex57cKpwdnE-unsplash.jpg',
@@ -69,7 +69,7 @@ const services = [
   },
   {
     name: 'Service Name Number VI',
-    price: '$ 200',
+    price: '$200.00',
     duration: '50 min',
     images: [
       '/img/micheile-henderson-IIEZ3Q0q2T4-unsplash.jpg',
@@ -82,7 +82,7 @@ const services = [
   },
   {
     name: 'Service Name Number VII',
-    price: '$ 200',
+    price: '$200.00',
     duration: '50 min',
     images: [
       '/img/luigi-pozzoli-hzquWrcAwQ4-unsplash.jpg',
@@ -95,7 +95,7 @@ const services = [
   },
   {
     name: 'Service Name Number VIII',
-    price: '$ 200',
+    price: '$200.00',
     duration: '50 min',
     images: [
       '/img/micheile-henderson-IIEZ3Q0q2T4-unsplash.jpg',
@@ -108,7 +108,7 @@ const services = [
   },
   {
     name: 'Service Name Number IX',
-    price: '$ 200',
+    price: '$200.00',
     duration: '50 min',
     images: [
       '/img/kuan-fang-w6BD_RZHnDs-unsplash.jpg',
@@ -121,7 +121,7 @@ const services = [
   },
   {
     name: 'Service Name Number X',
-    price: '$ 200',
+    price: '$200.00',
     duration: '50 min',
     images: [
       '/img/joanne-caselyn-suarez-kCGhXLU32Bg-unsplash.jpg',
@@ -134,7 +134,7 @@ const services = [
   },
   {
     name: 'Service Name Number XI',
-    price: '$ 200',
+    price: '$200.00',
     duration: '50 min',
     images: [
       '/img/fas-khan-n-DPU28GoEA-unsplash.jpg',
@@ -147,7 +147,7 @@ const services = [
   },
   {
     name: 'Service Name Number XII',
-    price: '$ 200',
+    price: '$200.00',
     duration: '50 min',
     images: [
       '/img/dylan-nolte--D09rH5sTw4-unsplash.jpg',
@@ -160,7 +160,7 @@ const services = [
   },
   {
     name: 'Service Name Number XIII',
-    price: '$ 200',
+    price: '$200.00',
     duration: '50 min',
     images: [
       '/img/anna-earl-J9cvIUrojUY-unsplash.jpg',
