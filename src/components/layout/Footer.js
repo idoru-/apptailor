@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Button, Heading, Anchor, Text } from 'grommet'
+import { Box, Button, Text, Anchor } from 'grommet'
 
 export const Footer = ({ appName }) => (
   <Box
@@ -19,15 +19,15 @@ export const Footer = ({ appName }) => (
     }}
   >
     <Box direction='row' align='center'>
-      <Heading
-        level='4'
+      <Text
+        size='small'
         margin={{
           right: 'small',
           vertical: 'none',
         }}
       >
-        {appName}© 2019
-      </Heading>
+        © {appName} 2019
+      </Text>
     </Box>
     <Box direction='row' align='center'>
       <Anchor
