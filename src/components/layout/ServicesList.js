@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import ProductCard from '../layout/ProductCard'
 
-import { Box, Grid, InfiniteScroll } from 'grommet'
+import { Box, InfiniteScroll } from 'grommet'
 
 const services = [
   {
