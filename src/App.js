@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
@@ -21,19 +21,40 @@ import {
   Support,
 } from './components/pages'
 import { AppBar, Footer } from './components/layout'
+import { Basket as BasketIcon } from 'grommet-icons'
+import { Heading, Anchor } from 'grommet'
 
 function App() {
+  const [header, setHeader] = useState('')
+
   return (
     <Router>
       <Grommet theme={grommet} full>
         <Box fill>
           <AppBar appName='My App' />
+
+          <Box direction='row' background='brand' pad={{ horizontal: 'medium' }}>
+            <Box basis='2/3'>
+              <Heading>{header}</Heading>
+            </Box>
+            <Box margin={{ vertical: 'small' }}>
+              <Anchor
+                icon={<BasketIcon size='medium' />}
+                label={
+                  <Heading level='4' href='#' textAlign='end'>
+                    My&nbsp;Cart&nbsp;(0)
+                  </Heading>
+                }
+              />
+            </Box>
+          </Box>
+
           <Box flex>
             <Switch>
               <Route path='/' exact component={MainMenu} />
               <Route path='/purchase' component={Purchase} />
               <Route path='/professional' component={SelectPro} />
-              <Route path='/products' component={SelectProduct} />
+              <Route path='/products' component={_ => <SelectProduct setHeader={setHeader} />} />
               <Route path='/summary' component={PurchaseSummary} />
               <Route path='/date' component={SelectDate} />
               <Route path='/purchases' component={MyPurchases} />
