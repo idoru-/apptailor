@@ -14,23 +14,20 @@ function NotificationsCheckbox() {
   )
 }
 
-export const Settings = props => {
-  props.setHeader('Settings')
-
-  return (
-    <Box fill background='brand' align='center' justify='center'>
-      <Box>{NotificationsCheckbox()}</Box>
-      <Heading level='3'>Linked Accounts</Heading>
-      <Text>
-        <LinkIcon color='accent-3' /> Calendar
-      </Text>
-      <Text>
-        <LinkIcon color='accent-3' /> Facebook
-      </Text>
-      <Button label='Link New Account' href='#' margin='small' />
-      <Heading level='3'>Delete Account</Heading>
-      <Text>This action is forever.</Text>
-      <Button label='Delete' href='#' margin='small' />
-    </Box>
-  )
-}
+export const Settings = () => (
+  <Box fill align='center' justify='center'>
+    <Heading>Settings</Heading>
+    <Box>{NotificationsCheckbox()}</Box>
+    <Heading level='3'>Linked Accounts</Heading>
+    <Text>
+      <LinkIcon color='brand' /> Calendar
+    </Text>
+    <Text>
+      <LinkIcon color='brand' /> Facebook
+    </Text>
+    <Button label='Link New Account' href='#' margin='small' />
+    <Heading level='3'>Delete Account</Heading>
+    <Text>This action is forever.</Text>
+    <Button label='Delete' href='#' margin='small' />
+  </Box>
+)

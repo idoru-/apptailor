@@ -57,7 +57,7 @@ function App() {
               <Route path='/purchase' component={_ => <Purchase setHeader={setHeader} />} />
               <Route path='/order/professional' component={_ => <SelectPro setHeader={setHeader} />} />
               <Route path='/order/products' component={_ => <SelectProduct setHeader={setHeader} />} />
-              <Route path='/order/summary' component={_ => <PurchaseSummary setHeader={setHeader} />} />
+              <Route path='/summary' component={PurchaseSummary} />
               <Route path='/order/date' component={_ => <SelectDate setHeader={setHeader} />} />
               <Route path='/order/submitted' component={_ => <OrderSubmitted setHeader={setHeader} />} />
               <Route path='/purchases' component={_ => <MyPurchases setHeader={setHeader} />} />
@@ -65,8 +65,8 @@ function App() {
               <Route path='/signin' component={SignIn} />
               <Route path='/signup' component={SignUp} />
               <Route path='/signup/success' component={Success} />
-              <Route path='/support' component={_ => <Support setHeader={setHeader} />} />
-              <Route path='/settings' component={_ => <Settings setHeader={setHeader} />} />
+              <Route path='/support' component={Support} />
+              <Route path='/settings' component={Settings} />
             </Switch>
           </Box>
           <Footer appName='My App' />
