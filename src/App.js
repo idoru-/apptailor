@@ -8,6 +8,7 @@ import {
   MainMenu,
   Purchase,
   PurchaseSummary,
+  OrderSummary,
   SelectPro,
   SelectProduct,
   SelectDate,
@@ -58,6 +59,7 @@ function App() {
               <Route path='/order/professional' component={_ => <SelectPro setHeader={setHeader} />} />
               <Route path='/order/products' component={_ => <SelectProduct setHeader={setHeader} />} />
               <Route path='/summary' component={PurchaseSummary} />
+              <Route path='/order/summary' component={OrderSummary} />
               <Route path='/order/date' component={_ => <SelectDate setHeader={setHeader} />} />
               <Route path='/order/submitted' component={_ => <OrderSubmitted setHeader={setHeader} />} />
               <Route path='/purchases' component={_ => <MyPurchases setHeader={setHeader} />} />
