@@ -8,7 +8,8 @@ export const OrderSubmitted = props => {
   return (
     <Box fill align='center' justify='start' background='brand'>
       <Text>Thank You!</Text>
-      <Button label='Back to Main Menu' href='/' margin='large' />
+      <Button label='Back to Main Menu' href='/' margin='medium' />
+      <Button label='View Order Summary' href='/order/summary' margin='small' />
     </Box>
   )
 }
