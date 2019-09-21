@@ -30,17 +30,20 @@ const pros = [
   },
 ]
 
-export const SelectPro = () => (
-  <Box fill align='center' justify='start' background='brand'>
-    <Heading>SelectPro</Heading>
-    <Heading level='3'>Our Professionals</Heading>
-    <Box height='large' overflow='auto' margin={{ bottom: 'small' }}>
-      <Grid align='start' columns={{ count: 'fill', size: 'full' }} gap='medium'>
-        <InfiniteScroll items={pros}>
-          {pro => <ProCard {...pro} key={pro.id} onClickFavorite={() => this.updateFavorite(pro.id)} />}
-        </InfiniteScroll>
-      </Grid>
+export const SelectPro = props => {
+  props.setHeader('Select Pro')
+
+  return (
+    <Box fill align='center' justify='start' background='brand'>
+      <Heading level='3'>Our Professionals</Heading>
+      <Box height='large' overflow='auto' margin={{ bottom: 'small' }}>
+        <Grid align='start' columns={{ count: 'fill', size: 'full' }} gap='medium'>
+          <InfiniteScroll items={pros}>
+            {pro => <ProCard {...pro} key={pro.id} onClickFavorite={() => this.updateFavorite(pro.id)} />}
+          </InfiniteScroll>
+        </Grid>
+      </Box>
+      <Button label='Next' href='/date' />
     </Box>
-    <Button label='Next' href='/date' />
-  </Box>
-)
+  )
+}

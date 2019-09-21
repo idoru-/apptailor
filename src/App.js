@@ -51,20 +51,20 @@ function App() {
 
           <Box flex>
             <Switch>
-              <Route path='/' exact component={MainMenu} />
-              <Route path='/purchase' component={Purchase} />
-              <Route path='/professional' component={SelectPro} />
+              <Route path='/' exact component={_ => <MainMenu setHeader={setHeader} />} />
+              <Route path='/purchase' component={_ => <Purchase setHeader={setHeader} />} />
+              <Route path='/professional' component={_ => <SelectPro setHeader={setHeader} />} />
               <Route path='/products' component={_ => <SelectProduct setHeader={setHeader} />} />
-              <Route path='/summary' component={PurchaseSummary} />
-              <Route path='/date' component={SelectDate} />
-              <Route path='/purchases' component={MyPurchases} />
+              <Route path='/summary' component={_ => <PurchaseSummary setHeader={setHeader} />} />
+              <Route path='/date' component={_ => <SelectDate setHeader={setHeader} />} />
+              <Route path='/submitted' component={_ => <OrderSubmitted setHeader={setHeader} />} />
+              <Route path='/purchases' component={_ => <MyPurchases setHeader={setHeader} />} />
               <Route path='/reward' component={Reward} />
               <Route path='/signin' component={SignIn} />
               <Route path='/signup' component={SignUp} />
-              <Route path='/success' component={Success} />
-              <Route path='/support' component={Support} />
-              <Route path='/settings' component={Settings} />
-              <Route path='/submitted' component={OrderSubmitted} />
+              <Route path='/signup/success' component={Success} />
+              <Route path='/support' component={_ => <Support setHeader={setHeader} />} />
+              <Route path='/settings' component={_ => <Settings setHeader={setHeader} />} />
             </Switch>
           </Box>
           <Footer appName='My App' />
