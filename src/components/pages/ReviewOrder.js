@@ -1,10 +1,10 @@
 import React from 'react'
 
-import { Box, Button, Heading, Table, TableBody, TableCell, TableHeader, TableRow } from 'grommet'
+import { Box, Button, Heading, Table, TableBody, TableCell, TableHeader, TableRow, Text } from 'grommet'
 
-export const PurchaseSummary = () => (
+export const ReviewOrder = () => (
   <Box fill align='center' justify='start' background='brand'>
-    <Heading>Purchase Summary</Heading>
+    <Heading>Review Order</Heading>
     <Box pad='small'>
       <Table>
         <TableHeader>
@@ -20,19 +20,25 @@ export const PurchaseSummary = () => (
         <TableBody>
           <TableRow>
             <TableCell scope='row'>
-              <strong>Product Product</strong>
+              <Heading level='3'>Product Product</Heading>
+              <Text>Pro: First Name Last Name</Text>
+              <Text>Date: 09/21/2019 Time: 12:30 AM</Text>
             </TableCell>
             <TableCell>120.00</TableCell>
           </TableRow>
           <TableRow>
             <TableCell scope='row'>
-              <strong>Product Product Product</strong>
+              <Heading level='3'>Product Product Product</Heading>
+              <Text>Pro: First Name Last Name</Text>
+              <Text>Date: 09/21/2019 Time: 12:30 AM</Text>
             </TableCell>
             <TableCell>160.00</TableCell>
           </TableRow>
           <TableRow>
             <TableCell scope='row'>
-              <strong>Service Service</strong>
+              <Heading level='3'>Service Service</Heading>
+              <Text>Pro: First Name Last Name</Text>
+              <Text>Date: 09/21/2019 Time: 12:30 AM</Text>
             </TableCell>
             <TableCell>200.00</TableCell>
           </TableRow>
@@ -48,7 +54,7 @@ export const PurchaseSummary = () => (
           </TableRow>
         </TableBody>
       </Table>
-      <Button label='Place Order' href='/submitted' />
     </Box>
+    <Button label='Place Order' href='/order/submitted' />
   </Box>
 )
