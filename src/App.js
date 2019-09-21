@@ -25,7 +25,7 @@ import { Basket as BasketIcon } from 'grommet-icons'
 import { Heading, Anchor } from 'grommet'
 
 function App() {
-  const [header, setHeader] = useState('')
+  const [header, setHeader] = useState(undefined)
 
   return (
     <Router>
@@ -33,21 +33,23 @@ function App() {
         <Box fill>
           <AppBar appName='My App' />
 
-          <Box direction='row' background='brand' pad={{ horizontal: 'medium' }}>
-            <Box basis='2/3'>
-              <Heading>{header}</Heading>
+          {header !== undefined && (
+            <Box>
+              <Box direction='row-reverse' background='brand' pad={{ horizontal: 'medium' }}>
+                <Anchor
+                  icon={<BasketIcon size='medium' />}
+                  label={
+                    <Heading level='4' href='#' margin={{ horizontal: 'small' }}>
+                      My&nbsp;Cart&nbsp;(0)
+                    </Heading>
+                  }
+                />
+              </Box>
+              <Box pad={{ horizontal: 'medium' }} align='center' background='brand'>
+                <Heading margin={{ top: 'none', bottom: 'medium' }}>{header}</Heading>
+              </Box>
             </Box>
-            <Box margin={{ vertical: 'small' }}>
-              <Anchor
-                icon={<BasketIcon size='medium' />}
-                label={
-                  <Heading level='4' href='#' textAlign='end'>
-                    My&nbsp;Cart&nbsp;(0)
-                  </Heading>
-                }
-              />
-            </Box>
-          </Box>
+          )}
 
           <Box flex>
             <Switch>
