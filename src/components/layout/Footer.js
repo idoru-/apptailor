@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Button, Text, Anchor } from 'grommet'
+import { Box, Text, Anchor } from 'grommet'
 
 export const Footer = ({ appName }) => (
   <Box
@@ -48,25 +48,15 @@ export const Footer = ({ appName }) => (
         Sign In
       </Anchor>
     </Box>
-    <Button href='/support'>
-      <Box
-        flex={false}
-        direction='row'
-        align='center'
-        margin={{
-          left: 'small',
-        }}
-      >
-        <Anchor
-          level='4'
-          margin={{
-            right: 'small',
-            vertical: 'none',
-          }}
-        >
-          Support
-        </Anchor>
-      </Box>
-    </Button>
+    <Anchor
+      href='/support'
+      level='4'
+      margin={{
+        right: 'small',
+        vertical: 'none',
+      }}
+    >
+      Support
+    </Anchor>
   </Box>
 )
