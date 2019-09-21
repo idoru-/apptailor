@@ -43,7 +43,7 @@ export const SelectPro = props => {
           </InfiniteScroll>
         </Grid>
       </Box>
-      <Button label='Next' href='/date' />
+      <Button label='Next' href='/order/date' />
     </Box>
   )
 }

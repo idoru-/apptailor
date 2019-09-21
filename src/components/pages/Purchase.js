@@ -7,8 +7,8 @@ export const Purchase = props => {
 
   return (
     <Box fill align='center' justify='start' gap='medium' background='brand' border={{ color: 'brand', size: 'large' }}>
-      <Button label='For Myself' href='/products' />
-      <Button label='As a Gift' href='/products' />
+      <Button label='For Myself' href='/order/products' />
+      <Button label='As a Gift' href='/order/products' />
     </Box>
   )
 }

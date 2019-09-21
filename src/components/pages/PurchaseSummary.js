@@ -51,7 +51,7 @@ export const PurchaseSummary = props => {
           </TableBody>
         </Table>
       </Box>
-      <Button label='Place Order' href='/submitted' />
+      <Button label='Place Order' href='/order/submitted' />
     </Box>
   )
 }

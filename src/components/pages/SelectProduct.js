@@ -21,7 +21,7 @@ export const SelectProduct = props => {
           <Box pad='medium'>Some Combos</Box>
         </Tab>
       </Tabs>
-      <Button label='Purchase' href='/professional' />
+      <Button label='Next' href='/order/professional' />
     </Box>
   )
 }

@@ -36,7 +36,7 @@ export const SelectDate = props => {
           </TableBody>
         </Table>
       </Box>
-      <Button label='Next' href='/summary' />
+      <Button label='Next' href='/order/summary' />
     </Box>
   )
 }
