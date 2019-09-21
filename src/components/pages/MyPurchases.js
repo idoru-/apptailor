@@ -6,7 +6,7 @@ export const MyPurchases = props => {
   props.setHeader('My Purchases')
 
   return (
-    <Box fill align='center' justify='center'>
+    <Box fill background='brand' align='center' justify='center'>
       <Heading>MyPurchases</Heading>
     </Box>
   )

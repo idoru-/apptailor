@@ -18,14 +18,14 @@ export const Settings = props => {
   props.setHeader('Settings')
 
   return (
-    <Box fill align='center' justify='center'>
+    <Box fill background='brand' align='center' justify='center'>
       <Box>{NotificationsCheckbox()}</Box>
       <Heading level='3'>Linked Accounts</Heading>
       <Text>
-        <LinkIcon color='brand' /> Calendar
+        <LinkIcon color='accent-3' /> Calendar
       </Text>
       <Text>
-        <LinkIcon color='brand' /> Facebook
+        <LinkIcon color='accent-3' /> Facebook
       </Text>
       <Button label='Link New Account' href='#' margin='small' />
       <Heading level='3'>Delete Account</Heading>
