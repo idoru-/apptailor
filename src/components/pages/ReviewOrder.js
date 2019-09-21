@@ -13,7 +13,7 @@ export const ReviewOrder = () => (
               Name
             </TableCell>
             <TableCell scope='col' border='bottom'>
-              Price
+              Price, $
             </TableCell>
           </TableRow>
         </TableHeader>
@@ -24,7 +24,7 @@ export const ReviewOrder = () => (
               <Text>Pro: First Name Last Name</Text>
               <Text>Date: 09/21/2019 Time: 12:30 AM</Text>
             </TableCell>
-            <TableCell>120.00</TableCell>
+            <TableCell verticalAlign='bottom'>120.00</TableCell>
           </TableRow>
           <TableRow>
             <TableCell scope='row'>
@@ -32,7 +32,7 @@ export const ReviewOrder = () => (
               <Text>Pro: First Name Last Name</Text>
               <Text>Date: 09/21/2019 Time: 12:30 AM</Text>
             </TableCell>
-            <TableCell>160.00</TableCell>
+            <TableCell verticalAlign='bottom'>160.00</TableCell>
           </TableRow>
           <TableRow>
             <TableCell scope='row'>
@@ -40,7 +40,7 @@ export const ReviewOrder = () => (
               <Text>Pro: First Name Last Name</Text>
               <Text>Date: 09/21/2019 Time: 12:30 AM</Text>
             </TableCell>
-            <TableCell>200.00</TableCell>
+            <TableCell verticalAlign='bottom'>200.00</TableCell>
           </TableRow>
           <TableRow>
             <TableCell scope='row'>
@@ -49,8 +49,12 @@ export const ReviewOrder = () => (
             <TableCell> </TableCell>
           </TableRow>
           <TableRow>
-            <TableCell scope='row'>Total</TableCell>
-            <TableCell>480.00</TableCell>
+            <TableCell scope='row'>
+              <strong>Total</strong>
+            </TableCell>
+            <TableCell>
+              <strong>480.00</strong>
+            </TableCell>
           </TableRow>
         </TableBody>
       </Table>
