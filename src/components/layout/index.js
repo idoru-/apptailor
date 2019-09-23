@@ -1,5 +1,6 @@
 export * from './AppBar'
 export * from './Navbar'
+export * from './CartDisplay'
 export * from './Footer'
 export * from './HeaderTitleCart'
 export * from './ProCard'
