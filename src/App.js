@@ -22,9 +22,7 @@ import {
   Success,
   Support,
 } from './components/pages'
-import { AppBar, Footer } from './components/layout'
-import { Basket as BasketIcon } from 'grommet-icons'
-import { Heading, Anchor } from 'grommet'
+import { AppBar, Footer, HeaderTitleCart } from './components/layout'
 
 function App() {
   const [header, setHeader] = useState(undefined)
@@ -35,23 +33,7 @@ function App() {
         <Box fill>
           <AppBar appName='My App' />
 
-          {header !== undefined && (
-            <Box>
-              <Box direction='row-reverse' background='brand' pad={{ horizontal: 'medium' }}>
-                <Anchor
-                  icon={<BasketIcon size='medium' />}
-                  label={
-                    <Heading level='4' href='#' margin={{ horizontal: 'small' }}>
-                      My&nbsp;Cart&nbsp;(0)
-                    </Heading>
-                  }
-                />
-              </Box>
-              <Box pad={{ horizontal: 'medium' }} align='center' background='brand'>
-                <Heading margin={{ top: 'none', bottom: 'medium' }}>{header}</Heading>
-              </Box>
-            </Box>
-          )}
+          {header && <HeaderTitleCart header={header} />}
 
           <Box flex>
             <Switch>
