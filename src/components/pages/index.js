@@ -1,3 +1,4 @@
+export * from './Cart'
 export * from './MainMenu'
 export * from './MyPurchases'
 export * from './OrderSubmitted'

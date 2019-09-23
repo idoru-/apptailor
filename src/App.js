@@ -15,6 +15,7 @@ import {
   OrderSubmitted,
   SignIn,
   SignUp,
+  Cart,
   Reward,
   MyPurchases,
   Settings,
@@ -63,6 +64,7 @@ function App() {
               <Route path='/order/date' component={_ => <SelectDate setHeader={setHeader} />} />
               <Route path='/order/submitted' component={_ => <OrderSubmitted setHeader={setHeader} />} />
               <Route path='/purchases' component={_ => <MyPurchases setHeader={setHeader} />} />
+              <Route path='/cart' component={Cart} />
               <Route path='/reward' component={Reward} />
               <Route path='/signin' component={SignIn} />
               <Route path='/signup' component={SignUp} />
