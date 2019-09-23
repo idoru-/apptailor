@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Box, Button, Heading } from 'grommet'
+import { Box, Button } from 'grommet'
 
 export const MainMenu = props => {
   props.setHeader('Main Menu')
