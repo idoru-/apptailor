@@ -11,7 +11,7 @@ const services = [
     image: '/img/louis-hansel-e96ST3p7tn4-unsplash.jpg',
     id: '1',
     proName: 'Shannon Huntington',
-    date: '09/21/2019',
+    date: '09/21/2019 (Sat)',
     time: '12:30AM',
   },
   {
@@ -21,7 +21,7 @@ const services = [
     image: '/img/james-fitzgerald-h2Sp-CFF9Jc-unsplash.jpg',
     id: '3',
     proName: 'Shannon Huntington',
-    date: '09/21/2019',
+    date: '09/21/2019 (Sat)',
     time: '12:30AM',
   },
   {
@@ -31,7 +31,7 @@ const services = [
     image: '/img/henk-van-der-steege-sJvE2oIWicA-unsplash.jpg',
     id: '4',
     proName: 'Shannon Huntington',
-    date: '09/21/2019',
+    date: '09/21/2019 (Sat)',
     time: '12:30AM',
   },
   {
@@ -41,7 +41,7 @@ const services = [
     image: '/img/mungyu-kim-Ex57cKpwdnE-unsplash.jpg',
     id: '5',
     proName: 'Shannon Huntington',
-    date: '09/21/2019',
+    date: '09/21/2019 (Sat)',
     time: '12:30AM',
   },
   {
@@ -51,7 +51,7 @@ const services = [
     image: '/img/kuan-fang-w6BD_RZHnDs-unsplash.jpg',
     id: '9',
     proName: 'Shannon Huntington',
-    date: '09/21/2019',
+    date: '09/21/2019 (Sat)',
     time: '12:30AM',
   },
   {
@@ -61,7 +61,7 @@ const services = [
     image: '/img/joanne-caselyn-suarez-kCGhXLU32Bg-unsplash.jpg',
     id: '10',
     proName: 'Shannon Huntington',
-    date: '09/21/2019',
+    date: '09/21/2019 (Sat)',
     time: '12:30AM',
   },
   {
@@ -71,7 +71,7 @@ const services = [
     image: '/img/anna-earl-J9cvIUrojUY-unsplash.jpg',
     id: '13',
     proName: 'Shannon Huntington',
-    date: '09/21/2019',
+    date: '09/21/2019 (Sat)',
     time: '12:30AM',
   },
 ]
