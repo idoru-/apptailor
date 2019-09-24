@@ -21,6 +21,8 @@ import {
   Settings,
   Success,
   Support,
+  SupportApp,
+  SupportClient,
 } from './components/pages'
 import { AppBar, Footer, HeaderTitleCart } from './components/layout'
 
@@ -51,7 +53,9 @@ function App() {
               <Route path='/signin' component={SignIn} />
               <Route path='/signup' component={SignUp} />
               <Route path='/signup/success' component={Success} />
-              <Route path='/support' component={Support} />
+              <Route path='/support' exact component={Support} />
+              <Route path='/support/app' component={SupportApp} />
+              <Route path='/support/client' component={SupportClient} />
               <Route path='/settings' component={Settings} />
             </Switch>
           </Box>
