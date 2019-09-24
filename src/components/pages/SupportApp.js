@@ -17,7 +17,7 @@ function FormTextInput() {
 
 function FormTextArea() {
   const [value, setValue] = React.useState('')
-  return <TextArea placeholder='Message' value={value} onChange={event => setValue(event.target.value)} />
+  return <TextArea placeholder='Message' rows='5' value={value} onChange={event => setValue(event.target.value)} />
 }
 
 export const SupportApp = () => (
