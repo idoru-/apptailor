@@ -12,34 +12,40 @@ export default class ServiceCardCart extends Component {
         <Box height='small' overflow='hidden'>
           <Image src={image} fit='cover' />
         </Box>
-        <Box pad='small'>
+        <Box pad='medium'>
           <Heading level='2' margin='none'>
             <Anchor href='#' color='accent-2'>
               {name}
             </Anchor>
           </Heading>
-          <Paragraph>
-            <Anchor href='/order/date'>
-              <CalendarIcon color='accent-1' />
-            </Anchor>
-            {'  '}
-            {date}
-          </Paragraph>
-          <Paragraph>
-            <Anchor href='/order/date'>
-              <ClockIcon color='accent-1' />
-            </Anchor>
-            {'  '} {time}
-          </Paragraph>
-          <Paragraph>
-            <Text size='small'>Duration:</Text> {duration}
-          </Paragraph>
-          <Paragraph>
-            <Anchor href='/order/professional'>Pro:</Anchor> {proName}
-          </Paragraph>
-          <Paragraph>
-            <Text size='small'>Quantity:</Text> 1
-          </Paragraph>
+          <Box direction='row' justify='start' gap='medium'>
+            <Paragraph>
+              <Anchor href='/order/date'>
+                <CalendarIcon color='accent-1' />
+              </Anchor>
+              {'  '}
+              {date}
+            </Paragraph>
+            <Paragraph>
+              <Anchor href='/order/date'>
+                <ClockIcon color='accent-1' />
+              </Anchor>
+              {'  '} {time}
+            </Paragraph>
+          </Box>
+          <Box direction='row' justify='between'>
+            <Paragraph margin={{ vertical: 'none' }}>
+              <Anchor href='/order/professional'>Pro:</Anchor> {proName}
+            </Paragraph>
+          </Box>
+          <Box direction='row' justify='between'>
+            <Paragraph margin={{ vertical: 'none' }}>
+              <Text size='small'>Duration:</Text> {duration}
+            </Paragraph>
+            <Paragraph margin={{ vertical: 'none' }}>
+              <Text size='small'>Quantity:</Text> 1
+            </Paragraph>
+          </Box>
           <Paragraph>
             <Text size='small'>Price:</Text> {price}
           </Paragraph>
