@@ -20,25 +20,28 @@ export const ReviewOrder = () => (
         <TableBody>
           <TableRow>
             <TableCell scope='row'>
-              <Heading level='3'>Product Product</Heading>
+              <Heading level='3'>Product Product ( x1 )</Heading>
+              <Text>09/21/2019, Sat | 12:30 PM</Text>
               <Text>Pro: First Name Last Name</Text>
-              <Text>Date: 09/21/2019 Time: 12:30 AM</Text>
+              <Text size='small'>50 min</Text>
             </TableCell>
             <TableCell verticalAlign='bottom'>120.00</TableCell>
           </TableRow>
           <TableRow>
             <TableCell scope='row'>
-              <Heading level='3'>Product Product Product</Heading>
+              <Heading level='3'>Service Service Product Product Product ( x1 )</Heading>
+              <Text>09/21/2019, Sat | 1:30 PM</Text>
               <Text>Pro: First Name Last Name</Text>
-              <Text>Date: 09/21/2019 Time: 12:30 AM</Text>
+              <Text size='small'>50 min</Text>
             </TableCell>
             <TableCell verticalAlign='bottom'>160.00</TableCell>
           </TableRow>
           <TableRow>
             <TableCell scope='row'>
-              <Heading level='3'>Service Service</Heading>
+              <Heading level='3'>Service Service ( x1 )</Heading>
+              <Text>09/21/2019, Sat | 2:30 PM</Text>
               <Text>Pro: First Name Last Name</Text>
-              <Text>Date: 09/21/2019 Time: 12:30 AM</Text>
+              <Text size='small'>50 min</Text>
             </TableCell>
             <TableCell verticalAlign='bottom'>200.00</TableCell>
           </TableRow>
