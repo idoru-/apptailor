@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import ProductCard from '../layout/ProductCard'
+import ServiceCard from '../layout/ServiceCard'
 
 import { Box, InfiniteScroll } from 'grommet'
 
@@ -177,7 +177,7 @@ export default class ServicesList extends Component {
   render() {
     return (
       <Box height='medium' overflow='auto'>
-        <InfiniteScroll items={services}>{service => <ProductCard {...service} key={service.id} />}</InfiniteScroll>
+        <InfiniteScroll items={services}>{service => <ServiceCard {...service} key={service.id} />}</InfiniteScroll>
       </Box>
     )
   }
