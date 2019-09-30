@@ -1,9 +1,23 @@
 import React, { Component } from 'react'
 
 import { Box, Button, Image, Paragraph, Text, Heading, Anchor } from 'grommet'
-import { Calendar as CalendarIcon, Clock as ClockIcon } from 'grommet-icons'
+import { Calendar as CalendarIcon, Clock as ClockIcon, Alert as AlertIcon } from 'grommet-icons'
 
 export default class ServiceCardCart extends Component {
+  dataOrAlert(data) {
+    if (data == null) {
+      return (
+        <Anchor color='accent-4' href='#'>
+          <Text size='small'>{'  '}TAP TO SELECT</Text>
+          {'  '}
+          <AlertIcon color='accent-4' />
+        </Anchor>
+      )
+    } else {
+      return data
+    }
+  }
+
   render() {
     const { name, price, proName, duration, image, date, time, id } = this.props
 
@@ -24,18 +38,19 @@ export default class ServiceCardCart extends Component {
                 <CalendarIcon color='accent-1' />
               </Anchor>
               {'  '}
-              {date}
+              {this.dataOrAlert(date)}
             </Paragraph>
             <Paragraph>
               <Anchor href='/order/date'>
                 <ClockIcon color='accent-1' />
               </Anchor>
-              {'  '} {time}
+              {'  '} {this.dataOrAlert(time)}
             </Paragraph>
           </Box>
           <Box direction='row' justify='between'>
             <Paragraph margin={{ vertical: 'none' }}>
-              <Anchor href='/order/professional'>Pro:</Anchor> {proName}
+              <Anchor href='/order/professional'>Pro:</Anchor>
+              {this.dataOrAlert(proName)}
             </Paragraph>
           </Box>
           <Box direction='row' justify='between'>

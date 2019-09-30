@@ -10,9 +10,9 @@ const services = [
     duration: '50 min',
     image: '/img/louis-hansel-e96ST3p7tn4-unsplash.jpg',
     id: '1',
-    proName: 'Shannon Huntington',
-    date: '09/21/2019 (Sat)',
-    time: '12:30AM',
+    proName: null,
+    date: null,
+    time: null,
   },
   {
     name: 'Service Name Number III',
