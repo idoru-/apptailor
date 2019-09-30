@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Box, Button, Heading, InfiniteScroll, Table, TableBody, TableCell, TableHeader, TableRow, Text } from 'grommet'
+import { Box, Button, Heading, InfiniteScroll, Table, TableBody, TableCell, TableHeader, TableRow } from 'grommet'
 import ServiceCardReviewOrder from '../layout/ServiceCardReviewOrder'
 
 const services = [

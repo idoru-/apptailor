@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import { Box, Button, Paragraph, Text, Heading, TableCell, TableRow } from 'grommet'
+import { Text, Heading, TableCell, TableRow } from 'grommet'
 
 export default class ServiceCardReviewOrder extends Component {
   render() {
