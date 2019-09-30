@@ -19,6 +19,7 @@ import {
   Cart,
   Reward,
   MyPurchases,
+  PurchaseDetails,
   Settings,
   Success,
   Support,
@@ -49,7 +50,8 @@ function App() {
               <Route path='/order/review' component={ReviewOrder} />
               <Route path='/order/date' component={_ => <SelectDate setHeader={setHeader} />} />
               <Route path='/order/submitted' component={_ => <OrderSubmitted setHeader={setHeader} />} />
-              <Route path='/purchases' component={_ => <MyPurchases setHeader={setHeader} />} />
+              <Route path='/purchases' exact component={_ => <MyPurchases setHeader={setHeader} />} />
+              <Route path='/purchases/details' component={_ => <PurchaseDetails setHeader={setHeader} />} />
               <Route path='/cart' component={Cart} />
               <Route path='/reward' component={Reward} />
               <Route path='/signin' component={SignIn} />
