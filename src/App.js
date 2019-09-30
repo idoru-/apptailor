@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import { Box, Grommet, grommet } from 'grommet'
 
 import {
+  About,
   MainMenu,
   Purchase,
   OrderSummary,
@@ -41,6 +42,7 @@ function App() {
             <Switch>
               <Route path='/' exact component={_ => <MainMenu setHeader={setHeader} />} />
               <Route path='/purchase' component={_ => <Purchase setHeader={setHeader} />} />
+              <Route path='/about' component={_ => <About setHeader={setHeader} />} />
               <Route path='/order/professional' component={_ => <SelectPro setHeader={setHeader} />} />
               <Route path='/order/products' component={_ => <SelectProduct setHeader={setHeader} />} />
               <Route path='/order/summary' component={OrderSummary} />

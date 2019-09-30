@@ -1,4 +1,5 @@
 export * from './Cart'
+export * from './About'
 export * from './MainMenu'
 export * from './MyPurchases'
 export * from './OrderSubmitted'
