@@ -1,6 +1,40 @@
 import React from 'react'
 
-import { Box, Button, Heading, Table, TableBody, TableCell, TableHeader, TableRow, Text } from 'grommet'
+import { Box, Button, Heading, InfiniteScroll, Table, TableBody, TableCell, TableHeader, TableRow, Text } from 'grommet'
+import ServiceCardReviewOrder from '../layout/ServiceCardReviewOrder'
+
+const services = [
+  {
+    name: 'Service Name Number III',
+    price: '200.00',
+    duration: 50,
+    id: '1',
+    proName: 'Shannon Huntington',
+    date: '09/21/2019 (Sat)',
+    time: '12:30AM',
+    quantity: 1,
+  },
+  {
+    name: 'Service Name Number III',
+    price: '200.00',
+    duration: 50,
+    id: '2',
+    proName: 'Shannon Huntington',
+    date: '09/21/2019 (Sat)',
+    time: '12:30AM',
+    quantity: 5,
+  },
+  {
+    name: 'Service Name Number III',
+    price: '200.00',
+    duration: 50,
+    id: '3',
+    proName: 'Shannon Huntington',
+    date: '09/21/2019 (Sat)',
+    time: '12:30AM',
+    quantity: 2,
+  },
+]
 
 export const ReviewOrder = () => (
   <Box fill align='center' justify='start' background='brand'>
@@ -18,33 +52,10 @@ export const ReviewOrder = () => (
           </TableRow>
         </TableHeader>
         <TableBody>
-          <TableRow>
-            <TableCell scope='row'>
-              <Heading level='3'>Product Product ( x1 )</Heading>
-              <Text>09/21/2019, Sat | 12:30 PM</Text>
-              <Text>Pro: First Name Last Name</Text>
-              <Text size='small'>50 min</Text>
-            </TableCell>
-            <TableCell verticalAlign='bottom'>120.00</TableCell>
-          </TableRow>
-          <TableRow>
-            <TableCell scope='row'>
-              <Heading level='3'>Service Service Product Product Product ( x1 )</Heading>
-              <Text>09/21/2019, Sat | 1:30 PM</Text>
-              <Text>Pro: First Name Last Name</Text>
-              <Text size='small'>50 min</Text>
-            </TableCell>
-            <TableCell verticalAlign='bottom'>160.00</TableCell>
-          </TableRow>
-          <TableRow>
-            <TableCell scope='row'>
-              <Heading level='3'>Service Service ( x1 )</Heading>
-              <Text>09/21/2019, Sat | 2:30 PM</Text>
-              <Text>Pro: First Name Last Name</Text>
-              <Text size='small'>50 min</Text>
-            </TableCell>
-            <TableCell verticalAlign='bottom'>200.00</TableCell>
-          </TableRow>
+          <InfiniteScroll items={services} overflow={{ vertical: 'scroll' }}>
+            {service => <ServiceCardReviewOrder {...service} key={service.id} />}
+          </InfiniteScroll>
+
           <TableRow>
             <TableCell scope='row'>
               <strong> </strong>
