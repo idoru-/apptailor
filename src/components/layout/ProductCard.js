@@ -4,7 +4,7 @@ import { Box, Button, Carousel, Image, Paragraph, Text, Heading } from 'grommet'
 
 export default class ProductCard extends Component {
   render() {
-    const { name, price, images, description, id } = this.props
+    const { name, price, images, description, size, id } = this.props
 
     return (
       <Box width='medium' margin={{ bottom: 'medium' }} flex='grow' background='dark-1' key={id}>
@@ -20,6 +20,9 @@ export default class ProductCard extends Component {
             {name}
           </Heading>
           <Paragraph>{description}</Paragraph>
+          <Paragraph>
+            <Text size='small'>Size:</Text> {size}
+          </Paragraph>
           <Paragraph>
             <Text size='small'>Price:</Text> {price}
           </Paragraph>

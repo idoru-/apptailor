@@ -13,6 +13,7 @@ const products = [
       '/img/clem-onojeghuo-AEL0ceW7IUU-unsplash.jpg',
     ],
     id: '1',
+    size: '100 ml',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti alias nostrum itaque voluptates veritatis quibusdam officiis dignissimos iusto accusamus possimus.',
   },
@@ -25,6 +26,7 @@ const products = [
       '/img/clem-onojeghuo-AEL0ceW7IUU-unsplash.jpg',
     ],
     id: '2',
+    size: '100 ml',
     description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, odio.',
   },
   {
@@ -36,6 +38,7 @@ const products = [
       '/img/clem-onojeghuo-AEL0ceW7IUU-unsplash.jpg',
     ],
     id: '3',
+    size: '100 ml',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptate maxime nulla reiciendis tenetur. Recusandae.',
   },
@@ -48,6 +51,7 @@ const products = [
       '/img/clem-onojeghuo-AEL0ceW7IUU-unsplash.jpg',
     ],
     id: '4',
+    size: '100 ml',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptate maxime nulla reiciendis tenetur. Recusandae.',
   },
@@ -60,6 +64,7 @@ const products = [
       '/img/clem-onojeghuo-AEL0ceW7IUU-unsplash.jpg',
     ],
     id: '5',
+    size: '100 ml',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
   },
   {
@@ -71,6 +76,7 @@ const products = [
       '/img/clem-onojeghuo-AEL0ceW7IUU-unsplash.jpg',
     ],
     id: '6',
+    size: '100 ml',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptate maxime nulla reiciendis tenetur. Recusandae.',
   },
@@ -83,6 +89,7 @@ const products = [
       '/img/clem-onojeghuo-AEL0ceW7IUU-unsplash.jpg',
     ],
     id: '7',
+    size: '100 ml',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptate maxime nulla reiciendis tenetur. Recusandae.',
   },
@@ -95,6 +102,7 @@ const products = [
       '/img/clem-onojeghuo-AEL0ceW7IUU-unsplash.jpg',
     ],
     id: '8',
+    size: '100 ml',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptate maxime nulla reiciendis tenetur. Recusandae.',
   },
@@ -107,6 +115,7 @@ const products = [
       '/img/clem-onojeghuo-AEL0ceW7IUU-unsplash.jpg',
     ],
     id: '12',
+    size: '100 ml',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptate maxime nulla reiciendis tenetur. Recusandae.',
   },
