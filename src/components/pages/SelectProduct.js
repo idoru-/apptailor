@@ -3,6 +3,7 @@ import React from 'react'
 import { Box, Button, Tab, Tabs } from 'grommet'
 import ServicesList from '../layout/ServicesList'
 import ProductsList from '../layout/ProductsList'
+import CombosList from '../layout/CombosList'
 
 export const SelectProduct = props => {
   props.setHeader('Products and Services')
@@ -21,7 +22,9 @@ export const SelectProduct = props => {
           </Box>
         </Tab>
         <Tab title='Combos'>
-          <Box pad='medium'>Some Combos</Box>
+          <Box pad='medium'>
+            <CombosList />
+          </Box>
         </Tab>
       </Tabs>
       <Button label='Next' href='/order/professional' />
