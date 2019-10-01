@@ -18,6 +18,7 @@ import {
   SignUp,
   Cart,
   Reward,
+  ProDetails,
   MyPurchases,
   PurchaseDetails,
   Settings,
@@ -50,6 +51,7 @@ function App() {
               <Route path='/order/review' component={ReviewOrder} />
               <Route path='/order/date' component={_ => <SelectDate setHeader={setHeader} />} />
               <Route path='/order/submitted' component={_ => <OrderSubmitted setHeader={setHeader} />} />
+              <Route path='/pro' exact component={_ => <ProDetails setHeader={setHeader} />} />
               <Route path='/purchases' exact component={_ => <MyPurchases setHeader={setHeader} />} />
               <Route path='/purchases/details' component={_ => <PurchaseDetails setHeader={setHeader} />} />
               <Route path='/cart' component={Cart} />

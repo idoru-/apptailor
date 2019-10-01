@@ -11,7 +11,7 @@ export default class ProCard extends Component {
         <Box height='medium' width='medium'>
           <Image src={image} fit='cover' />
           <Box pad='medium'>
-            <Anchor>
+            <Anchor href='/pro'>
               <Heading level='3' margin={'none'}>
                 {name}
               </Heading>
