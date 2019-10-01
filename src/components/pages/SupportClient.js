@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Box, Button, Heading, Form, Text, TextArea, TextInput, Anchor } from 'grommet'
+import { Box, Button, Heading, Form, TextArea, TextInput, Anchor } from 'grommet'
 
 function FormTextInput() {
   const [value, setValue] = React.useState('')

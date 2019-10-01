@@ -43,7 +43,7 @@ export const PurchaseDetails = props => {
   props.setHeader('Purchase Details')
 
   return (
-    <Box fill justify='start' background='brand' size='large' pad='medium'>
+    <Box fill justify='start' background='brand' pad='medium'>
       <Heading level='3' margin='none'>
         {purchase.date}
       </Heading>
