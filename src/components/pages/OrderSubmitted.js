@@ -10,6 +10,7 @@ export const OrderSubmitted = props => {
       <Text>Thank You!</Text>
       <Button label='Back to Main Menu' href='/' margin='medium' />
       <Button label='View Order Summary' href='/order/summary' margin='small' />
+      <Button label='Add to Calendar' href='#' margin='small' />
     </Box>
   )
 }
